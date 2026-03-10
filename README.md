@@ -1,134 +1,127 @@
 # Sattar Ahmed — Medical Billing & Revenue Cycle Portfolio
 
-A professional portfolio website for Sattar Ahmed, Medical Billing & Revenue Cycle Specialist.
+Professional portfolio website showcasing medical billing expertise, revenue cycle management knowledge, and healthcare coding insights. This project demonstrates practical experience in CPT coding, ICD-10 diagnosis coding, insurance claim workflows, denial management, and payer processes through a clean and interactive web portfolio.
 
-**Live Demo:** [Enable GitHub Pages to deploy — see instructions below](#setup--deployment)
+## Live Website
 
----
+After enabling GitHub Pages, the portfolio will be available at:
+https://your-username.github.io/your-repository-name
+
+## Project Highlights
+
+✔ Professional animated portfolio website
+✔ Medical billing knowledge hub
+✔ Interactive CPT and ICD-10 search tool
+✔ Revenue cycle workflow visualization
+✔ Mobile-optimized responsive design
+✔ Downloadable ATS-ready resume
+✔ Employer contact form
+
+## Technology Stack
+
+HTML5
+CSS3
+JavaScript (Vanilla)
+GitHub Pages for hosting
+This project intentionally avoids frameworks and build tools to keep the website lightweight, fast, and easy to deploy.
 
 ## Features
 
-- Responsive design (mobile, tablet, desktop)
-- Animated skill bars & scroll reveal effects
-- Live CPT / ICD-10 / Billing Topic search tool (30+ entries)
-- FAQ accordion
-- Contact form → opens Gmail compose (works on all devices)
-- No frameworks, no build tools — pure HTML, CSS, JavaScript
+### Interactive Medical Billing Search Tool
 
----
+Search billing knowledge topics including CPT codes, ICD-10 diagnosis codes, insurance claim processing steps, prior authorization processes, denial management strategies, and revenue cycle management practices.
+
+### Animated Portfolio Sections
+
+The website includes the following sections:
+• Professional hero section
+• Animated skills visualization
+• Professional timeline
+• Medical billing workflow overview
+• Frequently asked questions section
+• Contact form for employers and recruiters
 
 ## Project Structure
 
-```
+Repository structure used in this project:
 sattar-portfolio/
-├── index.html                   ← Main HTML (all sections)
-├── css/
-│   └── style.css                ← All styles & design tokens
-├── js/
-│   └── script.js                ← All interactivity & search data
-├── assets/
-│   ├── images/
-│   │   └── profile.jpg          ← Add your profile photo here
-│   └── cv/
-│       └── sattar-ahmed-cv.pdf  ← Add your CV/resume here
+├── index.html
+├── style.css
+├── script.js
+├── 451.jpg
+├── SATTAR AHMED.pdf
 └── README.md
-```
 
----
+## File Description
 
-## Setup & Deployment
+index.html — Main portfolio website containing all sections and structure
+style.css — Styling, layout, colors, and responsive design rules
+script.js — JavaScript functionality including animations and search tool
+451.jpg — Profile image used on the portfolio
+SATTAR AHMED.pdf — Downloadable CV / resume
+README.md — Project documentation
 
-### Option 1 — GitHub Pages (Free Hosting)
+## Deployment Guide
 
-1. Create a new GitHub repository named `sattar-portfolio` (or any name)
-2. Upload all files keeping the folder structure intact
-3. Go to **Settings → Pages**
-4. Under **Source**, select `main` branch → `/ (root)` → click **Save**
-5. Your site will be live at `https://your-username.github.io/sattar-portfolio/`
+### GitHub Pages (Recommended)
 
-### Option 2 — Netlify (Drag & Drop)
+1. Create a repository on GitHub.
+2. Upload all project files to the repository.
+3. Open **Repository Settings**.
+4. Navigate to **Pages**.
+5. Under **Source**, choose:
+   Branch: main
+   Folder: /(root)
+6. Save the settings.
+   Your website will be live at:
+   https://yourusername.github.io/repository-name
 
-1. Go to [netlify.com](https://www.netlify.com) and sign up (free)
-2. Drag the entire `sattar-portfolio/` folder onto the Netlify deploy area
-3. Your site is live instantly with a generated URL
+### Netlify Deployment
 
-### Option 3 — Run Locally
+1. Go to https://www.netlify.com
+2. Create a free account.
+3. Drag and drop the project folder into the deployment area.
+4. Netlify will instantly generate a public website URL.
 
-No server needed — just open `index.html` directly in any browser.
+### Local Development
 
----
+No server is required. Open **index.html** in any modern browser to run the project locally.
 
 ## Customization
 
-### Add Your Profile Photo
+### Update Profile Image
 
-Replace `assets/images/profile.jpg` with your photo. Then update `index.html` — find the profile card section and replace:
+Replace the file:
+451.jpg
+Then update the image reference inside **index.html** if needed.
 
-```html
-<div class="profile-img-placeholder">SA</div>
-```
+### Update Resume
 
-with:
+Replace:
+SATTAR AHMED.pdf
+The download button on the portfolio will automatically serve the updated resume.
 
-```html
-<img src="assets/images/profile.jpg" alt="Portrait of Sattar Ahmed" class="profile-img"/>
-```
+### Update Contact Information
 
-### Add Your CV
+Edit the contact section inside **index.html** to update email, phone number, or LinkedIn details.
 
-Place your CV PDF at `assets/cv/sattar-ahmed-cv.pdf`. The Download CV button in the hero will work automatically.
+## About
 
-### Update Contact Info
-
-All contact details are in `index.html` inside the `#contact` section.
-
-### Colors & Fonts
-
-All design tokens (colors, fonts, spacing) are CSS variables at the top of `css/style.css`:
-
-```css
-:root {
-  --jade:        #0B3D2E;
-  --champagne:   #E8C97A;
-  --emerald:     #2ECC71;
-  /* ... */
-}
-```
-
-### Add EmailJS (Optional — Silent Background Sending)
-
-To send emails directly without opening Gmail:
-
-1. Sign up at [emailjs.com](https://www.emailjs.com) (free tier available)
-2. Add your Gmail service and create an email template
-3. In `js/script.js`, replace the `window.open(gmailUrl...)` block with:
-
-```js
-emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-  from_name: name,
-  from_email: email,
-  subject: subject,
-  message: message,
-  to_email: 'sattarahmedofficial1@gmail.com'
-});
-```
-
-4. Load the EmailJS SDK in `index.html` before `script.js`:
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-```
-
----
+**Sattar Ahmed**
+Medical Billing & Revenue Cycle Specialist
+Experience includes:
+• CPT coding and charge entry
+• ICD-10 diagnosis coding
+• Insurance claim submission
+• Denial management and appeals
+• Payment posting
+• Accounts receivable follow-up
+Available for remote healthcare billing and revenue cycle positions worldwide.
 
 ## Contact
 
-**Sattar Ahmed**
-- Email: [sattarahmedofficial1@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=sattarahmedofficial1@gmail.com)
-- Phone: 0321-5063-059
-- LinkedIn: [linkedin.com/in/sattar-ahmed-88286438a](https://www.linkedin.com/in/sattar-ahmed-88286438a)
-- Location: Pakistan · Remote Available Worldwide
-
----
-
-&copy; 2025 Sattar Ahmed. All rights reserved.
+Email: [sattarahmedofficial1@gmail.com](mailto:sattarahmedofficial1@gmail.com)
+Phone: +92 321 5063059
+LinkedIn: https://linkedin.com/in/sattar-ahmed-88286438a
+Location: Pakistan — Remote Worldwide
+© 2025 Sattar Ahmed. All rights reserved.
